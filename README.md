@@ -1,5 +1,7 @@
 # robbertkl/base
 
+[![](https://badge.imagelayers.io/robbertkl/base:latest.svg)](https://imagelayers.io/?images=robbertkl/base:latest)
+
 Simple Docker base image:
 
 * Based on Debian
