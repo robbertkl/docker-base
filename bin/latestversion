@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ -z "${1}" ]; then
+    >&2 echo "Usage: ${0} user/repo"
+    exit 1
+fi
+
+GIT_TERMINAL_PROMPT=0 git ls-remote --tags "https://github.com/${1}.git" \
+    | cut -f2 \
+    | xargs -L1 basename \
+    | grep -v '[-^]' \
+    | sed -E 's/^v//' \
+    | sort -V \
+    | tail -n 1
