@@ -10,6 +10,7 @@ RUN cleaninstall \
     gettext-base \
     git \
     less \
+    lsb-release \
     nano
 
 # Environment variables
