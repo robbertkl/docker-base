@@ -7,6 +7,7 @@ RUN cleanupgrade
 RUN cleaninstall \
     ca-certificates \
     curl \
+    entr \
     gettext-base \
     git \
     less \
